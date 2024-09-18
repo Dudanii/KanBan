@@ -1,0 +1,74 @@
+/* src/components/KanbanBoard.css */
+.kanban-board {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f4f5f7;
+  }
+  
+  .group {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f4f5f7;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .group h2 {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #5e6c84;
+}
+
+.group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group-actions {
+  display: flex;
+  align-items: center;
+}
+
+.group-actions svg {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+
+.group h2 svg {
+    margin-right: 5px; /* Space between the icon and the text */
+}
+
+  .loading, .error {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    .board {
+      flex-direction: column;
+    }
+  
+    .group {
+      min-width: unset;
+    }
+}

@@ -1,0 +1,98 @@
+.display-options-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .display-button {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .display-button:focus {
+    outline: none;
+  }
+  
+  .display-icon {
+    margin-right: 8px;
+  }
+  
+  .dropdown-icon {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+    stroke: #555;
+  }
+  
+  .dropdown-icon.open {
+    transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    border-radius: 4px;
+    z-index: 1000;
+    width: 250px;
+  }
+  
+  .option-group {
+    margin-bottom: 12px;
+  }
+  
+  .option-label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .option-select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  .option-select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  .select-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative; /* Needed to position the dropdown icon inside the wrapper */
+  }
+  
+  .option-select {
+    padding-right: 24px; /* Make space for the dropdown icon inside the select box */
+  }
+  
+  .dropdown-icon {
+    position: absolute;
+    right: 8px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    pointer-events: none; /* So that click events pass through to the select element */
+  }
+  .dropdown-iconm {
+    position: absolute;
+    right: 7px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    pointer-events: none; /* So that click events pass through to the select element */
+  }
